@@ -1,0 +1,856 @@
+<sdf version='1.7'>
+  <model name='rover'>
+    <link name='base_footprint'>
+      <inertial>
+        <pose>0.007312 -0 0.272561 0 -0 0</pose>
+        <mass>27.4</mass>
+        <inertia>
+          <ixx>1.32284</ixx>
+          <ixy>2.17577e-06</ixy>
+          <ixz>0.00293017</ixz>
+          <iyy>7.96755</iyy>
+          <iyz>1.81322e-17</iyz>
+          <izz>8.30141</izz>
+        </inertia>
+      </inertial>
+      <collision name='base_footprint_fixed_joint_lump__base_link_collision'>
+        <pose>0 0 0.273745 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/arthavnuc/classwork/learn_690/project2/OSR_ws/install/osr_gazebo/share/osr_gazebo/meshes/body.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name='base_footprint_fixed_joint_lump__box_rotate_collision_1'>
+        <pose>-0.071275 0 0.35422 0 0 -3.14</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/arthavnuc/classwork/learn_690/project2/OSR_ws/install/osr_gazebo/share/osr_gazebo/meshes/box_link.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name='base_footprint_fixed_joint_lump__arm_rotate_L_collision_2'>
+        <pose>-0.071275 0.153 0.35422 0 0.2 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/arthavnuc/classwork/learn_690/project2/OSR_ws/install/osr_gazebo/share/osr_gazebo/meshes/arm.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name='base_footprint_fixed_joint_lump__turn_bukles_link_L_collision_3'>
+        <pose>0.000283 0.170545 0.269928 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/arthavnuc/classwork/learn_690/project2/OSR_ws/install/osr_gazebo/share/osr_gazebo/meshes/turn_L.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name='base_footprint_fixed_joint_lump__body_axis_link_L_collision_4'>
+        <pose>0.000283 0.109625 0.268683 0 -0 1.57</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/arthavnuc/classwork/learn_690/project2/OSR_ws/install/osr_gazebo/share/osr_gazebo/meshes/body_axis.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name='base_footprint_fixed_joint_lump__rocker_bogie_link_L_1_collision_5'>
+        <pose>0.016287 0.18111 0.270036 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/arthavnuc/classwork/learn_690/project2/OSR_ws/install/osr_gazebo/share/osr_gazebo/meshes/rockerbogie_middle_1.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name='base_footprint_fixed_joint_lump__arm_rotate_R_collision_6'>
+        <pose>-0.071275 -0.153 0.35422 0 0.2 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/arthavnuc/classwork/learn_690/project2/OSR_ws/install/osr_gazebo/share/osr_gazebo/meshes/arm.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name='base_footprint_fixed_joint_lump__turn_bukles_link_R_collision_7'>
+        <pose>0.000283 -0.170545 0.269928 0 0 -1.57</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/arthavnuc/classwork/learn_690/project2/OSR_ws/install/osr_gazebo/share/osr_gazebo/meshes/turn_R.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name='base_footprint_fixed_joint_lump__body_axis_link_R_collision_8'>
+        <pose>0.000283 -0.109625 0.268683 0 -0 1.57</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/arthavnuc/classwork/learn_690/project2/OSR_ws/install/osr_gazebo/share/osr_gazebo/meshes/body_axis.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name='base_footprint_fixed_joint_lump__rocker_bogie_link_R_1_collision_9'>
+        <pose>0.016287 -0.18111 0.270036 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/arthavnuc/classwork/learn_690/project2/OSR_ws/install/osr_gazebo/share/osr_gazebo/meshes/rockerbogie_middle_1.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='base_footprint_fixed_joint_lump__base_link_visual'>
+        <pose>0 0 0.273745 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/arthavnuc/classwork/learn_690/project2/OSR_ws/install/osr_gazebo/share/osr_gazebo/meshes/body.stl</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <visual name='base_footprint_fixed_joint_lump__box_rotate_visual_1'>
+        <pose>-0.071275 0 0.35422 0 0 -3.14</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/arthavnuc/classwork/learn_690/project2/OSR_ws/install/osr_gazebo/share/osr_gazebo/meshes/box_link.stl</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <visual name='base_footprint_fixed_joint_lump__arm_rotate_L_visual_2'>
+        <pose>-0.071275 0.153 0.35422 0 0.2 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/arthavnuc/classwork/learn_690/project2/OSR_ws/install/osr_gazebo/share/osr_gazebo/meshes/arm.stl</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <visual name='base_footprint_fixed_joint_lump__turn_bukles_link_L_visual_3'>
+        <pose>0.000283 0.170545 0.269928 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/arthavnuc/classwork/learn_690/project2/OSR_ws/install/osr_gazebo/share/osr_gazebo/meshes/turn_L.stl</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <visual name='base_footprint_fixed_joint_lump__body_axis_link_L_visual_4'>
+        <pose>0.000283 0.109625 0.268683 0 -0 1.57</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/arthavnuc/classwork/learn_690/project2/OSR_ws/install/osr_gazebo/share/osr_gazebo/meshes/body_axis.stl</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <visual name='base_footprint_fixed_joint_lump__rocker_bogie_link_L_1_visual_5'>
+        <pose>0.016287 0.18111 0.270036 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/arthavnuc/classwork/learn_690/project2/OSR_ws/install/osr_gazebo/share/osr_gazebo/meshes/rockerbogie_middle_1.stl</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <visual name='base_footprint_fixed_joint_lump__arm_rotate_R_visual_6'>
+        <pose>-0.071275 -0.153 0.35422 0 0.2 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/arthavnuc/classwork/learn_690/project2/OSR_ws/install/osr_gazebo/share/osr_gazebo/meshes/arm.stl</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <visual name='base_footprint_fixed_joint_lump__turn_bukles_link_R_visual_7'>
+        <pose>0.000283 -0.170545 0.269928 0 0 -1.57</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/arthavnuc/classwork/learn_690/project2/OSR_ws/install/osr_gazebo/share/osr_gazebo/meshes/turn_R.stl</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <visual name='base_footprint_fixed_joint_lump__body_axis_link_R_visual_8'>
+        <pose>0.000283 -0.109625 0.268683 0 -0 1.57</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/arthavnuc/classwork/learn_690/project2/OSR_ws/install/osr_gazebo/share/osr_gazebo/meshes/body_axis.stl</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <visual name='base_footprint_fixed_joint_lump__rocker_bogie_link_R_1_visual_9'>
+        <pose>0.016287 -0.18111 0.270036 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/arthavnuc/classwork/learn_690/project2/OSR_ws/install/osr_gazebo/share/osr_gazebo/meshes/rockerbogie_middle_1.stl</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <gravity>1</gravity>
+      <sensor name='imu_sensor' type='imu'>
+        <always_on>1</always_on>
+        <update_rate>100</update_rate>
+        <visualize>1</visualize>
+        <topic>"imu"</topic>
+        <plugin name='imu_plugin' filename='libgazebo_ros_imu_sensor.so'>
+          <topicName>imu</topicName>
+          <bodyName>imu_link</bodyName>
+          <updateRateHZ>100.0</updateRateHZ>
+          <gaussianNoise>0.0</gaussianNoise>
+          <xyzOffset>0 0 0</xyzOffset>
+          <rpyOffset>0 0 0</rpyOffset>
+          <frameName>imu_link</frameName>
+          <initialOrientationAsReference>0</initialOrientationAsReference>
+        </plugin>
+        <pose>0 0 0.273745 0 -0 0</pose>
+      </sensor>
+    </link>
+    <joint name='rear_wheel_joint_L' type='revolute'>
+      <pose relative_to='base_footprint'>-0.295476 0.18111 0.239657 0 -0 0</pose>
+      <parent>base_footprint</parent>
+      <child>rear_wheel_link_L</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <lower>-0.523599</lower>
+          <upper>0.523599</upper>
+          <effort>100000</effort>
+          <velocity>3</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='rear_wheel_link_L'>
+      <pose relative_to='rear_wheel_joint_L'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>0 0 0 0 0 -1.57</pose>
+        <mass>0.8</mass>
+        <inertia>
+          <ixx>0.00286529</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.0043293</iyy>
+          <iyz>0</iyz>
+          <izz>0.00181923</izz>
+        </inertia>
+      </inertial>
+      <collision name='rear_wheel_link_L_collision'>
+        <pose>0 0 0 0 0 -1.57</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/arthavnuc/classwork/learn_690/project2/OSR_ws/install/osr_gazebo/share/osr_gazebo/meshes/wheel_link_left_2.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='rear_wheel_link_L_visual'>
+        <pose>0 0 0 0 0 -1.57</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/arthavnuc/classwork/learn_690/project2/OSR_ws/install/osr_gazebo/share/osr_gazebo/meshes/wheel_link_left_2.stl</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='rear_wheel_joint_left' type='revolute'>
+      <pose relative_to='rear_wheel_link_L'>-0.000203 0.008131 -0.160678 0 -0 0</pose>
+      <parent>rear_wheel_link_L</parent>
+      <child>rear_wheel_link_left</child>
+      <axis>
+        <xyz>0 1 0</xyz>
+        <limit>
+          <lower>-1e+16</lower>
+          <upper>1e+16</upper>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='rear_wheel_link_left'>
+      <pose relative_to='rear_wheel_joint_left'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>0 0 0 -1.57 0 0</pose>
+        <mass>0.8</mass>
+        <inertia>
+          <ixx>0.00246215</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.00246297</iyy>
+          <iyz>0</iyz>
+          <izz>0.00356589</izz>
+        </inertia>
+      </inertial>
+      <collision name='rear_wheel_link_left_collision'>
+        <pose>0 0 0 -1.57 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/arthavnuc/classwork/learn_690/project2/OSR_ws/install/osr_gazebo/share/osr_gazebo/meshes/wheel.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='rear_wheel_link_left_visual'>
+        <pose>0 0 0 -1.57 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/arthavnuc/classwork/learn_690/project2/OSR_ws/install/osr_gazebo/share/osr_gazebo/meshes/wheel.stl</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='rocker_bogie_joint_L_2' type='revolute'>
+      <pose relative_to='base_footprint'>0.115905 0.18111 0.178761 0 -0 0</pose>
+      <parent>base_footprint</parent>
+      <child>rocker_bogie_link_L_2</child>
+      <axis>
+        <xyz>0 1 0</xyz>
+        <limit>
+          <lower>-0.5</lower>
+          <upper>0.5</upper>
+          <effort>10000</effort>
+          <velocity>1</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='rocker_bogie_link_L_2'>
+      <pose relative_to='rocker_bogie_joint_L_2'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>-0.009223 5e-06 -0.009116 0 -0 0</pose>
+        <mass>3.3</mass>
+        <inertia>
+          <ixx>0.520543</ixx>
+          <ixy>1.65779e-06</ixy>
+          <ixz>-0.00277462</ixz>
+          <iyy>1.17487</iyy>
+          <iyz>1.44944e-06</iyz>
+          <izz>0.696704</izz>
+        </inertia>
+      </inertial>
+      <collision name='rocker_bogie_link_L_2_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/arthavnuc/classwork/learn_690/project2/OSR_ws/install/osr_gazebo/share/osr_gazebo/meshes/rockerbogie_front_1.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name='rocker_bogie_link_L_2_fixed_joint_lump__middle_wheel_link_L_collision_1'>
+        <pose>-0.101456 5.3e-05 -0.100276 1.57 0 -1.57</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/arthavnuc/classwork/learn_690/project2/OSR_ws/install/osr_gazebo/share/osr_gazebo/meshes/wheel_middle_left.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='rocker_bogie_link_L_2_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/arthavnuc/classwork/learn_690/project2/OSR_ws/install/osr_gazebo/share/osr_gazebo/meshes/rockerbogie_front_1.stl</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <visual name='rocker_bogie_link_L_2_fixed_joint_lump__middle_wheel_link_L_visual_1'>
+        <pose>-0.101456 5.3e-05 -0.100276 1.57 0 -1.57</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/arthavnuc/classwork/learn_690/project2/OSR_ws/install/osr_gazebo/share/osr_gazebo/meshes/wheel_middle_left.stl</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='front_wheel_joint_L' type='revolute'>
+      <pose relative_to='rocker_bogie_link_L_2'>0.170113 -0.000335 0.076721 0 -0 0</pose>
+      <parent>rocker_bogie_link_L_2</parent>
+      <child>front_wheel_link_L</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <lower>-0.523599</lower>
+          <upper>0.523599</upper>
+          <effort>100000</effort>
+          <velocity>10</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='front_wheel_link_L'>
+      <pose relative_to='front_wheel_joint_L'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>0 0 0 0 0 -1.57</pose>
+        <mass>0.8</mass>
+        <inertia>
+          <ixx>0.00286529</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.0043293</iyy>
+          <iyz>0</iyz>
+          <izz>0.00181923</izz>
+        </inertia>
+      </inertial>
+      <collision name='front_wheel_link_L_collision'>
+        <pose>0 0 0 0 0 -1.57</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/arthavnuc/classwork/learn_690/project2/OSR_ws/install/osr_gazebo/share/osr_gazebo/meshes/wheel_link_left_2.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='front_wheel_link_L_visual'>
+        <pose>0 0 0 0 0 -1.57</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/arthavnuc/classwork/learn_690/project2/OSR_ws/install/osr_gazebo/share/osr_gazebo/meshes/wheel_link_left_2.stl</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='front_wheel_joint_left' type='revolute'>
+      <pose relative_to='front_wheel_link_L'>0.006231 0.019544 -0.169991 0 -0 0</pose>
+      <parent>front_wheel_link_L</parent>
+      <child>front_wheel_link_left</child>
+      <axis>
+        <xyz>0 1 0</xyz>
+        <limit>
+          <lower>-1e+16</lower>
+          <upper>1e+16</upper>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='front_wheel_link_left'>
+      <pose relative_to='front_wheel_joint_left'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>0 0 0 -1.57 0 0</pose>
+        <mass>0.8</mass>
+        <inertia>
+          <ixx>0.00246215</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.00246297</iyy>
+          <iyz>0</iyz>
+          <izz>0.00356589</izz>
+        </inertia>
+      </inertial>
+      <collision name='front_wheel_link_left_collision'>
+        <pose>0 0 0 -1.57 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/arthavnuc/classwork/learn_690/project2/OSR_ws/install/osr_gazebo/share/osr_gazebo/meshes/wheel.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='front_wheel_link_left_visual'>
+        <pose>0 0 0 -1.57 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/arthavnuc/classwork/learn_690/project2/OSR_ws/install/osr_gazebo/share/osr_gazebo/meshes/wheel.stl</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='middle_wheel_joint_left' type='revolute'>
+      <pose relative_to='rocker_bogie_link_L_2'>-0.094765 0.100435 -0.094851 0 -0 0</pose>
+      <parent>rocker_bogie_link_L_2</parent>
+      <child>middle_wheel_link_left</child>
+      <axis>
+        <xyz>0 1 0</xyz>
+        <limit>
+          <lower>-1e+16</lower>
+          <upper>1e+16</upper>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='middle_wheel_link_left'>
+      <pose relative_to='middle_wheel_joint_left'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>0 0 0 -1.57 0 0</pose>
+        <mass>0.8</mass>
+        <inertia>
+          <ixx>0.00246215</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.00246297</iyy>
+          <iyz>0</iyz>
+          <izz>0.00356589</izz>
+        </inertia>
+      </inertial>
+      <collision name='middle_wheel_link_left_collision'>
+        <pose>0 0 0 -1.57 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/arthavnuc/classwork/learn_690/project2/OSR_ws/install/osr_gazebo/share/osr_gazebo/meshes/wheel.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='middle_wheel_link_left_visual'>
+        <pose>0 0 0 -1.57 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/arthavnuc/classwork/learn_690/project2/OSR_ws/install/osr_gazebo/share/osr_gazebo/meshes/wheel.stl</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='rear_wheel_joint_R' type='revolute'>
+      <pose relative_to='base_footprint'>-0.295476 -0.18111 0.239657 0 -0 0</pose>
+      <parent>base_footprint</parent>
+      <child>rear_wheel_link_R</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <lower>-0.523599</lower>
+          <upper>0.523599</upper>
+          <effort>100000</effort>
+          <velocity>3</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='rear_wheel_link_R'>
+      <pose relative_to='rear_wheel_joint_R'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>0 0 0 0 -0 1.57</pose>
+        <mass>0.8</mass>
+        <inertia>
+          <ixx>0.00286529</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.0043293</iyy>
+          <iyz>0</iyz>
+          <izz>0.00181923</izz>
+        </inertia>
+      </inertial>
+      <collision name='rear_wheel_link_R_collision'>
+        <pose>0 0 0 0 -0 1.57</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/arthavnuc/classwork/learn_690/project2/OSR_ws/install/osr_gazebo/share/osr_gazebo/meshes/wheel_link_left_2.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='rear_wheel_link_R_visual'>
+        <pose>0 0 0 0 -0 1.57</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/arthavnuc/classwork/learn_690/project2/OSR_ws/install/osr_gazebo/share/osr_gazebo/meshes/wheel_link_left_2.stl</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='rear_wheel_joint_right' type='revolute'>
+      <pose relative_to='rear_wheel_link_R'>-0.000203 -0.008131 -0.160678 0 -0 0</pose>
+      <parent>rear_wheel_link_R</parent>
+      <child>rear_wheel_link_right</child>
+      <axis>
+        <xyz>0 1 0</xyz>
+        <limit>
+          <lower>-1e+16</lower>
+          <upper>1e+16</upper>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='rear_wheel_link_right'>
+      <pose relative_to='rear_wheel_joint_right'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>0 0 0 -1.57 -0 3.14</pose>
+        <mass>0.8</mass>
+        <inertia>
+          <ixx>0.00246215</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.00246297</iyy>
+          <iyz>0</iyz>
+          <izz>0.00356589</izz>
+        </inertia>
+      </inertial>
+      <collision name='rear_wheel_link_right_collision'>
+        <pose>0 0 0 -1.57 -0 3.14</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/arthavnuc/classwork/learn_690/project2/OSR_ws/install/osr_gazebo/share/osr_gazebo/meshes/wheel.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='rear_wheel_link_right_visual'>
+        <pose>0 0 0 -1.57 -0 3.14</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/arthavnuc/classwork/learn_690/project2/OSR_ws/install/osr_gazebo/share/osr_gazebo/meshes/wheel.stl</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='rocker_bogie_joint_R_2' type='revolute'>
+      <pose relative_to='base_footprint'>0.115905 -0.18111 0.178761 0 -0 0</pose>
+      <parent>base_footprint</parent>
+      <child>rocker_bogie_link_R_2</child>
+      <axis>
+        <xyz>0 1 0</xyz>
+        <limit>
+          <lower>-0.5</lower>
+          <upper>0.5</upper>
+          <effort>10000</effort>
+          <velocity>1</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='rocker_bogie_link_R_2'>
+      <pose relative_to='rocker_bogie_joint_R_2'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>-0.009223 -5e-06 -0.009116 0 -0 0</pose>
+        <mass>3.3</mass>
+        <inertia>
+          <ixx>0.520543</ixx>
+          <ixy>-1.65779e-06</ixy>
+          <ixz>-0.00277462</ixz>
+          <iyy>1.17487</iyy>
+          <iyz>-1.44944e-06</iyz>
+          <izz>0.696704</izz>
+        </inertia>
+      </inertial>
+      <collision name='rocker_bogie_link_R_2_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/arthavnuc/classwork/learn_690/project2/OSR_ws/install/osr_gazebo/share/osr_gazebo/meshes/rockerbogie_front_1.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name='rocker_bogie_link_R_2_fixed_joint_lump__middle_wheel_link_R_collision_1'>
+        <pose>-0.101456 -5.3e-05 -0.100276 -3.14 -0 1.57</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/arthavnuc/classwork/learn_690/project2/OSR_ws/install/osr_gazebo/share/osr_gazebo/meshes/wheel_middle_left.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='rocker_bogie_link_R_2_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/arthavnuc/classwork/learn_690/project2/OSR_ws/install/osr_gazebo/share/osr_gazebo/meshes/rockerbogie_front_1.stl</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <visual name='rocker_bogie_link_R_2_fixed_joint_lump__middle_wheel_link_R_visual_1'>
+        <pose>-0.101456 -5.3e-05 -0.100276 -3.14 -0 1.57</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/arthavnuc/classwork/learn_690/project2/OSR_ws/install/osr_gazebo/share/osr_gazebo/meshes/wheel_middle_left.stl</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='front_wheel_joint_R' type='revolute'>
+      <pose relative_to='rocker_bogie_link_R_2'>0.170113 -0.000335 0.076721 0 -0 0</pose>
+      <parent>rocker_bogie_link_R_2</parent>
+      <child>front_wheel_link_R</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <lower>-0.523599</lower>
+          <upper>0.523599</upper>
+          <effort>100000</effort>
+          <velocity>10</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='front_wheel_link_R'>
+      <pose relative_to='front_wheel_joint_R'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>0 0 0 0 -0 1.57</pose>
+        <mass>0.8</mass>
+        <inertia>
+          <ixx>0.00286529</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.0043293</iyy>
+          <iyz>0</iyz>
+          <izz>0.00181923</izz>
+        </inertia>
+      </inertial>
+      <collision name='front_wheel_link_R_collision'>
+        <pose>0 0 0 0 -0 1.57</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/arthavnuc/classwork/learn_690/project2/OSR_ws/install/osr_gazebo/share/osr_gazebo/meshes/wheel_link_left_2.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='front_wheel_link_R_visual'>
+        <pose>0 0 0 0 -0 1.57</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/arthavnuc/classwork/learn_690/project2/OSR_ws/install/osr_gazebo/share/osr_gazebo/meshes/wheel_link_left_2.stl</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='front_wheel_joint_right' type='revolute'>
+      <pose relative_to='front_wheel_link_R'>0.006231 -0.019544 -0.169991 0 -0 0</pose>
+      <parent>front_wheel_link_R</parent>
+      <child>front_wheel_link_right</child>
+      <axis>
+        <xyz>0 1 0</xyz>
+        <limit>
+          <lower>-1e+16</lower>
+          <upper>1e+16</upper>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='front_wheel_link_right'>
+      <pose relative_to='front_wheel_joint_right'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>0 0 0 -1.57 -0 3.14</pose>
+        <mass>0.8</mass>
+        <inertia>
+          <ixx>0.00246215</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.00246297</iyy>
+          <iyz>0</iyz>
+          <izz>0.00356589</izz>
+        </inertia>
+      </inertial>
+      <collision name='front_wheel_link_right_collision'>
+        <pose>0 0 0 -1.57 -0 3.14</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/arthavnuc/classwork/learn_690/project2/OSR_ws/install/osr_gazebo/share/osr_gazebo/meshes/wheel.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='front_wheel_link_right_visual'>
+        <pose>0 0 0 -1.57 -0 3.14</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/arthavnuc/classwork/learn_690/project2/OSR_ws/install/osr_gazebo/share/osr_gazebo/meshes/wheel.stl</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='middle_wheel_joint_right' type='revolute'>
+      <pose relative_to='rocker_bogie_link_R_2'>-0.094765 -0.100435 -0.094851 0 -0 0</pose>
+      <parent>rocker_bogie_link_R_2</parent>
+      <child>middle_wheel_link_right</child>
+      <axis>
+        <xyz>0 1 0</xyz>
+        <limit>
+          <lower>-1e+16</lower>
+          <upper>1e+16</upper>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='middle_wheel_link_right'>
+      <pose relative_to='middle_wheel_joint_right'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>0 0 0 -1.57 -0 3.14</pose>
+        <mass>0.8</mass>
+        <inertia>
+          <ixx>0.00246215</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.00246297</iyy>
+          <iyz>0</iyz>
+          <izz>0.00356589</izz>
+        </inertia>
+      </inertial>
+      <collision name='middle_wheel_link_right_collision'>
+        <pose>0 0 0 -1.57 -0 3.14</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/arthavnuc/classwork/learn_690/project2/OSR_ws/install/osr_gazebo/share/osr_gazebo/meshes/wheel.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='middle_wheel_link_right_visual'>
+        <pose>0 0 0 -1.57 -0 3.14</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/arthavnuc/classwork/learn_690/project2/OSR_ws/install/osr_gazebo/share/osr_gazebo/meshes/wheel.stl</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <static>0</static>
+    <plugin name='gazebo_ros2_control' filename='libgazebo_ros2_control.so'>
+      <parameters>/home/arthavnuc/classwork/learn_690/project2/OSR_ws/install/osr_gazebo/share/osr_gazebo/config/controller_velocity.yaml</parameters>
+    </plugin>
+  </model>
+</sdf>
