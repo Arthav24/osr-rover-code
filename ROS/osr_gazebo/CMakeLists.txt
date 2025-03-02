@@ -28,9 +28,7 @@ find_package(trajectory_msgs REQUIRED)
 install(DIRECTORY
         launch
         config
-        urdf
-        meshes
-        rviz
+        models
         worlds
         DESTINATION share/${PROJECT_NAME}/
 )

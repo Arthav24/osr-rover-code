@@ -16,8 +16,11 @@ def generate_launch_description():
     print("ROVER_MODEL", os.environ["ROVER_MODEL"])
 
     ROVER_MODEL = os.environ['ROVER_MODEL']
+
     urdf_path = os.path.join(
         get_package_share_directory('osr_gazebo'),
+        'models',
+        'osr_rover',
         'urdf',
         'osr.sdf'
     )

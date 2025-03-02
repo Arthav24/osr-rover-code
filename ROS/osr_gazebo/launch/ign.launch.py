@@ -16,6 +16,8 @@ def generate_launch_description():
     launch_file_dir = os.path.join(get_package_share_directory('osr_gazebo'), 'launch')
     pkg_ros_gz_sim = get_package_share_directory('ros_gz_sim')
     use_sim_time = LaunchConfiguration('use_sim_time', default='true')
+    rover_model_path = os.path.join(get_package_share_directory('osr_gazebo'),'models')
+
     world = os.path.join(
         get_package_share_directory('osr_gazebo'),
         'worlds',
@@ -23,7 +25,7 @@ def generate_launch_description():
     )
     set_env_vars_resources = AppendEnvironmentVariable(
         'GZ_SIM_RESOURCE_PATH',
-        get_package_share_directory('osr_gazebo'))
+        rover_model_path)
     gzserver_cmd = IncludeLaunchDescription(
         PythonLaunchDescriptionSource(
             os.path.join(pkg_ros_gz_sim, 'launch', 'gz_sim.launch.py')
@@ -37,10 +39,8 @@ def generate_launch_description():
         launch_arguments={'gz_args': '-g -v4 '}.items()
     )
 
-    osr_urdf_path = os.path.join(
-        get_package_share_directory('osr_gazebo'))
-
-    xacro_file = os.path.join(osr_urdf_path,
+    xacro_file = os.path.join(rover_model_path,
+                              'osr_rover',
                               'urdf',
                               'osr.urdf.xacro')
 

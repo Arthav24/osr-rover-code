@@ -18,7 +18,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>file:///home/arthavnuc/classwork/learn_690/project2/OSR_ws/install/osr_gazebo/share/osr_gazebo/meshes/body.stl</uri>
+            <uri>model://osr_rover/meshes/body.stl</uri>
           </mesh>
         </geometry>
       </collision>
@@ -27,7 +27,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>file:///home/arthavnuc/classwork/learn_690/project2/OSR_ws/install/osr_gazebo/share/osr_gazebo/meshes/box_link.stl</uri>
+            <uri>model://osr_rover/meshes/box_link.stl</uri>
           </mesh>
         </geometry>
       </collision>
@@ -36,7 +36,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>file:///home/arthavnuc/classwork/learn_690/project2/OSR_ws/install/osr_gazebo/share/osr_gazebo/meshes/arm.stl</uri>
+            <uri>model://osr_rover/meshes/arm.stl</uri>
           </mesh>
         </geometry>
       </collision>
@@ -45,7 +45,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>file:///home/arthavnuc/classwork/learn_690/project2/OSR_ws/install/osr_gazebo/share/osr_gazebo/meshes/turn_L.stl</uri>
+            <uri>model://osr_rover/meshes/turn_L.stl</uri>
           </mesh>
         </geometry>
       </collision>
@@ -54,7 +54,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>file:///home/arthavnuc/classwork/learn_690/project2/OSR_ws/install/osr_gazebo/share/osr_gazebo/meshes/body_axis.stl</uri>
+            <uri>model://osr_rover/meshes/body_axis.stl</uri>
           </mesh>
         </geometry>
       </collision>
@@ -63,7 +63,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>file:///home/arthavnuc/classwork/learn_690/project2/OSR_ws/install/osr_gazebo/share/osr_gazebo/meshes/rockerbogie_middle_1.stl</uri>
+            <uri>model://osr_rover/meshes/rockerbogie_middle_1.stl</uri>
           </mesh>
         </geometry>
       </collision>
@@ -72,7 +72,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>file:///home/arthavnuc/classwork/learn_690/project2/OSR_ws/install/osr_gazebo/share/osr_gazebo/meshes/arm.stl</uri>
+            <uri>model://osr_rover/meshes/arm.stl</uri>
           </mesh>
         </geometry>
       </collision>
@@ -81,7 +81,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>file:///home/arthavnuc/classwork/learn_690/project2/OSR_ws/install/osr_gazebo/share/osr_gazebo/meshes/turn_R.stl</uri>
+            <uri>model://osr_rover/meshes/turn_R.stl</uri>
           </mesh>
         </geometry>
       </collision>
@@ -90,7 +90,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>file:///home/arthavnuc/classwork/learn_690/project2/OSR_ws/install/osr_gazebo/share/osr_gazebo/meshes/body_axis.stl</uri>
+            <uri>model://osr_rover/meshes/body_axis.stl</uri>
           </mesh>
         </geometry>
       </collision>
@@ -99,7 +99,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>file:///home/arthavnuc/classwork/learn_690/project2/OSR_ws/install/osr_gazebo/share/osr_gazebo/meshes/rockerbogie_middle_1.stl</uri>
+            <uri>model://osr_rover/meshes/rockerbogie_middle_1.stl</uri>
           </mesh>
         </geometry>
       </collision>
@@ -108,7 +108,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>file:///home/arthavnuc/classwork/learn_690/project2/OSR_ws/install/osr_gazebo/share/osr_gazebo/meshes/body.stl</uri>
+            <uri>model://osr_rover/meshes/body.stl</uri>
           </mesh>
         </geometry>
       </visual>
@@ -117,7 +117,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>file:///home/arthavnuc/classwork/learn_690/project2/OSR_ws/install/osr_gazebo/share/osr_gazebo/meshes/box_link.stl</uri>
+            <uri>model://osr_rover/meshes/box_link.stl</uri>
           </mesh>
         </geometry>
       </visual>
@@ -126,7 +126,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>file:///home/arthavnuc/classwork/learn_690/project2/OSR_ws/install/osr_gazebo/share/osr_gazebo/meshes/arm.stl</uri>
+            <uri>model://osr_rover/meshes/arm.stl</uri>
           </mesh>
         </geometry>
       </visual>
@@ -135,7 +135,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>file:///home/arthavnuc/classwork/learn_690/project2/OSR_ws/install/osr_gazebo/share/osr_gazebo/meshes/turn_L.stl</uri>
+            <uri>model://osr_rover/meshes/turn_L.stl</uri>
           </mesh>
         </geometry>
       </visual>
@@ -144,7 +144,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>file:///home/arthavnuc/classwork/learn_690/project2/OSR_ws/install/osr_gazebo/share/osr_gazebo/meshes/body_axis.stl</uri>
+            <uri>model://osr_rover/meshes/body_axis.stl</uri>
           </mesh>
         </geometry>
       </visual>
@@ -153,7 +153,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>file:///home/arthavnuc/classwork/learn_690/project2/OSR_ws/install/osr_gazebo/share/osr_gazebo/meshes/rockerbogie_middle_1.stl</uri>
+            <uri>model://osr_rover/meshes/rockerbogie_middle_1.stl</uri>
           </mesh>
         </geometry>
       </visual>
@@ -162,7 +162,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>file:///home/arthavnuc/classwork/learn_690/project2/OSR_ws/install/osr_gazebo/share/osr_gazebo/meshes/arm.stl</uri>
+            <uri>model://osr_rover/meshes/arm.stl</uri>
           </mesh>
         </geometry>
       </visual>
@@ -171,7 +171,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>file:///home/arthavnuc/classwork/learn_690/project2/OSR_ws/install/osr_gazebo/share/osr_gazebo/meshes/turn_R.stl</uri>
+            <uri>model://osr_rover/meshes/turn_R.stl</uri>
           </mesh>
         </geometry>
       </visual>
@@ -180,7 +180,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>file:///home/arthavnuc/classwork/learn_690/project2/OSR_ws/install/osr_gazebo/share/osr_gazebo/meshes/body_axis.stl</uri>
+            <uri>model://osr_rover/meshes/body_axis.stl</uri>
           </mesh>
         </geometry>
       </visual>
@@ -189,7 +189,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>file:///home/arthavnuc/classwork/learn_690/project2/OSR_ws/install/osr_gazebo/share/osr_gazebo/meshes/rockerbogie_middle_1.stl</uri>
+            <uri>model://osr_rover/meshes/rockerbogie_middle_1.stl</uri>
           </mesh>
         </geometry>
       </visual>
@@ -249,7 +249,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>file:///home/arthavnuc/classwork/learn_690/project2/OSR_ws/install/osr_gazebo/share/osr_gazebo/meshes/wheel_link_left_2.stl</uri>
+            <uri>model://osr_rover/meshes/wheel_link_left_2.stl</uri>
           </mesh>
         </geometry>
       </collision>
@@ -258,7 +258,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>file:///home/arthavnuc/classwork/learn_690/project2/OSR_ws/install/osr_gazebo/share/osr_gazebo/meshes/wheel_link_left_2.stl</uri>
+            <uri>model://osr_rover/meshes/wheel_link_left_2.stl</uri>
           </mesh>
         </geometry>
       </visual>
@@ -298,7 +298,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>file:///home/arthavnuc/classwork/learn_690/project2/OSR_ws/install/osr_gazebo/share/osr_gazebo/meshes/wheel.stl</uri>
+            <uri>model://osr_rover/meshes/wheel.stl</uri>
           </mesh>
         </geometry>
       </collision>
@@ -307,7 +307,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>file:///home/arthavnuc/classwork/learn_690/project2/OSR_ws/install/osr_gazebo/share/osr_gazebo/meshes/wheel.stl</uri>
+            <uri>model://osr_rover/meshes/wheel.stl</uri>
           </mesh>
         </geometry>
       </visual>
@@ -349,7 +349,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>file:///home/arthavnuc/classwork/learn_690/project2/OSR_ws/install/osr_gazebo/share/osr_gazebo/meshes/rockerbogie_front_1.stl</uri>
+            <uri>model://osr_rover/meshes/rockerbogie_front_1.stl</uri>
           </mesh>
         </geometry>
       </collision>
@@ -358,7 +358,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>file:///home/arthavnuc/classwork/learn_690/project2/OSR_ws/install/osr_gazebo/share/osr_gazebo/meshes/wheel_middle_left.stl</uri>
+            <uri>model://osr_rover/meshes/wheel_middle_left.stl</uri>
           </mesh>
         </geometry>
       </collision>
@@ -367,7 +367,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>file:///home/arthavnuc/classwork/learn_690/project2/OSR_ws/install/osr_gazebo/share/osr_gazebo/meshes/rockerbogie_front_1.stl</uri>
+            <uri>model://osr_rover/meshes/rockerbogie_front_1.stl</uri>
           </mesh>
         </geometry>
       </visual>
@@ -376,7 +376,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>file:///home/arthavnuc/classwork/learn_690/project2/OSR_ws/install/osr_gazebo/share/osr_gazebo/meshes/wheel_middle_left.stl</uri>
+            <uri>model://osr_rover/meshes/wheel_middle_left.stl</uri>
           </mesh>
         </geometry>
       </visual>
@@ -418,7 +418,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>file:///home/arthavnuc/classwork/learn_690/project2/OSR_ws/install/osr_gazebo/share/osr_gazebo/meshes/wheel_link_left_2.stl</uri>
+            <uri>model://osr_rover/meshes/wheel_link_left_2.stl</uri>
           </mesh>
         </geometry>
       </collision>
@@ -427,7 +427,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>file:///home/arthavnuc/classwork/learn_690/project2/OSR_ws/install/osr_gazebo/share/osr_gazebo/meshes/wheel_link_left_2.stl</uri>
+            <uri>model://osr_rover/meshes/wheel_link_left_2.stl</uri>
           </mesh>
         </geometry>
       </visual>
@@ -467,7 +467,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>file:///home/arthavnuc/classwork/learn_690/project2/OSR_ws/install/osr_gazebo/share/osr_gazebo/meshes/wheel.stl</uri>
+            <uri>model://osr_rover/meshes/wheel.stl</uri>
           </mesh>
         </geometry>
       </collision>
@@ -476,7 +476,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>file:///home/arthavnuc/classwork/learn_690/project2/OSR_ws/install/osr_gazebo/share/osr_gazebo/meshes/wheel.stl</uri>
+            <uri>model://osr_rover/meshes/wheel.stl</uri>
           </mesh>
         </geometry>
       </visual>
@@ -516,7 +516,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>file:///home/arthavnuc/classwork/learn_690/project2/OSR_ws/install/osr_gazebo/share/osr_gazebo/meshes/wheel.stl</uri>
+            <uri>model://osr_rover/meshes/wheel.stl</uri>
           </mesh>
         </geometry>
       </collision>
@@ -525,7 +525,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>file:///home/arthavnuc/classwork/learn_690/project2/OSR_ws/install/osr_gazebo/share/osr_gazebo/meshes/wheel.stl</uri>
+            <uri>model://osr_rover/meshes/wheel.stl</uri>
           </mesh>
         </geometry>
       </visual>
@@ -567,7 +567,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>file:///home/arthavnuc/classwork/learn_690/project2/OSR_ws/install/osr_gazebo/share/osr_gazebo/meshes/wheel_link_left_2.stl</uri>
+            <uri>model://osr_rover/meshes/wheel_link_left_2.stl</uri>
           </mesh>
         </geometry>
       </collision>
@@ -576,7 +576,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>file:///home/arthavnuc/classwork/learn_690/project2/OSR_ws/install/osr_gazebo/share/osr_gazebo/meshes/wheel_link_left_2.stl</uri>
+            <uri>model://osr_rover/meshes/wheel_link_left_2.stl</uri>
           </mesh>
         </geometry>
       </visual>
@@ -616,7 +616,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>file:///home/arthavnuc/classwork/learn_690/project2/OSR_ws/install/osr_gazebo/share/osr_gazebo/meshes/wheel.stl</uri>
+            <uri>model://osr_rover/meshes/wheel.stl</uri>
           </mesh>
         </geometry>
       </collision>
@@ -625,7 +625,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>file:///home/arthavnuc/classwork/learn_690/project2/OSR_ws/install/osr_gazebo/share/osr_gazebo/meshes/wheel.stl</uri>
+            <uri>model://osr_rover/meshes/wheel.stl</uri>
           </mesh>
         </geometry>
       </visual>
@@ -667,7 +667,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>file:///home/arthavnuc/classwork/learn_690/project2/OSR_ws/install/osr_gazebo/share/osr_gazebo/meshes/rockerbogie_front_1.stl</uri>
+            <uri>model://osr_rover/meshes/rockerbogie_front_1.stl</uri>
           </mesh>
         </geometry>
       </collision>
@@ -676,7 +676,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>file:///home/arthavnuc/classwork/learn_690/project2/OSR_ws/install/osr_gazebo/share/osr_gazebo/meshes/wheel_middle_left.stl</uri>
+            <uri>model://osr_rover/meshes/wheel_middle_left.stl</uri>
           </mesh>
         </geometry>
       </collision>
@@ -685,7 +685,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>file:///home/arthavnuc/classwork/learn_690/project2/OSR_ws/install/osr_gazebo/share/osr_gazebo/meshes/rockerbogie_front_1.stl</uri>
+            <uri>model://osr_rover/meshes/rockerbogie_front_1.stl</uri>
           </mesh>
         </geometry>
       </visual>
@@ -694,7 +694,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>file:///home/arthavnuc/classwork/learn_690/project2/OSR_ws/install/osr_gazebo/share/osr_gazebo/meshes/wheel_middle_left.stl</uri>
+            <uri>model://osr_rover/meshes/wheel_middle_left.stl</uri>
           </mesh>
         </geometry>
       </visual>
@@ -736,7 +736,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>file:///home/arthavnuc/classwork/learn_690/project2/OSR_ws/install/osr_gazebo/share/osr_gazebo/meshes/wheel_link_left_2.stl</uri>
+            <uri>model://osr_rover/meshes/wheel_link_left_2.stl</uri>
           </mesh>
         </geometry>
       </collision>
@@ -745,7 +745,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>file:///home/arthavnuc/classwork/learn_690/project2/OSR_ws/install/osr_gazebo/share/osr_gazebo/meshes/wheel_link_left_2.stl</uri>
+            <uri>model://osr_rover/meshes/wheel_link_left_2.stl</uri>
           </mesh>
         </geometry>
       </visual>
@@ -785,7 +785,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>file:///home/arthavnuc/classwork/learn_690/project2/OSR_ws/install/osr_gazebo/share/osr_gazebo/meshes/wheel.stl</uri>
+            <uri>model://osr_rover/meshes/wheel.stl</uri>
           </mesh>
         </geometry>
       </collision>
@@ -794,7 +794,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>file:///home/arthavnuc/classwork/learn_690/project2/OSR_ws/install/osr_gazebo/share/osr_gazebo/meshes/wheel.stl</uri>
+            <uri>model://osr_rover/meshes/wheel.stl</uri>
           </mesh>
         </geometry>
       </visual>
@@ -834,7 +834,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>file:///home/arthavnuc/classwork/learn_690/project2/OSR_ws/install/osr_gazebo/share/osr_gazebo/meshes/wheel.stl</uri>
+            <uri>model://osr_rover/meshes/wheel.stl</uri>
           </mesh>
         </geometry>
       </collision>
@@ -843,14 +843,14 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>file:///home/arthavnuc/classwork/learn_690/project2/OSR_ws/install/osr_gazebo/share/osr_gazebo/meshes/wheel.stl</uri>
+            <uri>model://osr_rover/meshes/wheel.stl</uri>
           </mesh>
         </geometry>
       </visual>
     </link>
     <static>0</static>
     <plugin name='gazebo_ros2_control' filename='libgazebo_ros2_control.so'>
-      <parameters>/home/arthavnuc/classwork/learn_690/project2/OSR_ws/install/osr_gazebo/share/osr_gazebo/config/controller_velocity.yaml</parameters>
+      <parameters>/home/arthavnuc/classwork/learn_690/project2/OSR_ws/install/osr_rover/share/osr_rover/config/controller_velocity.yaml</parameters>
     </plugin>
   </model>
 </sdf>

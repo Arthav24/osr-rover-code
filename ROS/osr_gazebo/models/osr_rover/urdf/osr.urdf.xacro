@@ -20,8 +20,8 @@
       <color rgba="0.5451 0.2706 0.0745 1"/>
     </material>
 
-    <xacro:include filename="$(find osr_gazebo)/urdf/gazebo.urdf.xacro"/>
-    <xacro:include filename="$(find osr_gazebo)/urdf/insert_transmission.urdf.xacro"/>
+    <xacro:include filename="$(find osr_gazebo)/models/osr_rover/urdf/gazebo.urdf.xacro"/>
+    <xacro:include filename="$(find osr_gazebo)/models/osr_rover/urdf/insert_transmission.urdf.xacro"/>
 
     <link name="base_footprint"/>
     <link name="base_link">
