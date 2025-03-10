@@ -23,6 +23,8 @@ def generate_launch_description():
         get_package_share_directory('osr_gazebo'))
 
     xacro_file = os.path.join(osr_urdf_path,
+                              'models',
+                              'osr_rover',
                               'urdf',
                               'osr.urdf.xacro')
 

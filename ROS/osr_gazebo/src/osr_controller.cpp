@@ -4,7 +4,7 @@
 #include "trajectory_msgs/msg/joint_trajectory.hpp"
 #include "trajectory_msgs/msg/joint_trajectory_point.hpp"
 #include "std_msgs/msg/float64_multi_array.hpp"
-#include "geometry_msgs/msg/twist.hpp"
+#include "geometry_msgs/msg/twist_stamped.hpp"
 
 #include "sensor_msgs/msg/imu.hpp"
 
@@ -27,7 +27,7 @@ private:
     rclcpp::Publisher<nav_msgs::msg::Odometry>::SharedPtr odom_pub;
 
 
-    rclcpp::Subscription<geometry_msgs::msg::Twist>::SharedPtr sub;
+    rclcpp::Subscription<geometry_msgs::msg::TwistStamped>::SharedPtr sub;
     rclcpp::Subscription<sensor_msgs::msg::JointState>::SharedPtr joint_sub;
     rclcpp::Subscription<sensor_msgs::msg::Imu>::SharedPtr imu_sub;
 
@@ -75,8 +75,8 @@ public:
         motor_wheel_pub = this->create_publisher<std_msgs::msg::Float64MultiArray>("/wheel_controller/commands", 1);
         servo_pub = this->create_publisher<trajectory_msgs::msg::JointTrajectory>("/servo_controller/joint_trajectory", 1);
 
-        sub = this->create_subscription<geometry_msgs::msg::Twist>(
-            "cmd_vel", 1, std::bind(&Controller::msgCallback, this, std::placeholders::_1));
+        sub = this->create_subscription<geometry_msgs::msg::TwistStamped>(
+            "cmd_vel_stamped", 1, std::bind(&Controller::msgCallback, this, std::placeholders::_1));
 
         joint_sub = this->create_subscription<sensor_msgs::msg::JointState>(
             "joint_states", 1, std::bind(&Controller::jointStateCallback, this, std::placeholders::_1));
@@ -157,21 +157,21 @@ public:
 
     }
 
-    void msgCallback(const geometry_msgs::msg::Twist::SharedPtr msg) {
+    void msgCallback(const geometry_msgs::msg::TwistStamped::SharedPtr msg) {
 
-        if((pri_velocity.linear.x == msg->linear.x) && (pri_velocity.angular.z == msg->angular.z)) return;
+        if((pri_velocity.linear.x == msg->twist.linear.x) && (pri_velocity.angular.z == msg->twist.angular.z)) return;
 
         if(delay_)
         {
             delay_ = false;
 
-            if (msg->angular.z == 0 && msg->linear.x != 0) { // linear velocity
+            if (msg->twist.angular.z == 0 && msg->twist.linear.x != 0) { // linear velocity
                 go_straight(msg);
                 publishVelocity();
                 publishAngles();
             }
 
-            else if((msg->angular.z != 0)&&(msg->linear.x == 0))  // rotate in place
+            else if((msg->twist.angular.z != 0)&&(msg->twist.linear.x == 0))  // rotate in place
             {
                 FL_servo_data = -atan(d3/d1);
                 FR_servo_data = atan(d3/d1);
@@ -183,7 +183,7 @@ public:
                 publishVelocity();
             }
 
-            else if((msg->angular.z != 0)&&(msg->linear.x != 0)) // rotation
+            else if((msg->twist.angular.z != 0)&&(msg->twist.linear.x != 0)) // rotation
             {
                 // 1. Calculate turning radius
                 twist_to_turning_radius(msg);
@@ -192,14 +192,14 @@ public:
                 calculate_servo_angle(l);
 
                 // 3. Calculate wheel angular velocity
-                calculate_drive_velocity(msg->linear.x, l);
+                calculate_drive_velocity(msg->twist.linear.x, l);
 
                 // 4. publish
                 publishAngles();
                 publishVelocity();
             }
 
-            else if((msg->angular.z == 0)&&(msg->linear.x == 0))
+            else if((msg->twist.angular.z == 0)&&(msg->twist.linear.x == 0))
             {
                 stop();
                 publishAngles();
@@ -209,8 +209,8 @@ public:
             delay_ = true;
         }
 
-        pri_velocity.linear.x = msg->linear.x;
-        pri_velocity.angular.z = msg->angular.z;
+        pri_velocity.linear.x = msg->twist.linear.x;
+        pri_velocity.angular.z = msg->twist.angular.z;
 
     }
 
@@ -294,8 +294,8 @@ public:
         RR_servo_data = 0;
     }
 
-    void go_straight(const geometry_msgs::msg::Twist::SharedPtr msg) {
-        double velocity_data = msg->linear.x / ROVER_WHEEL_RADIUS;
+    void go_straight(const geometry_msgs::msg::TwistStamped::SharedPtr msg) {
+        double velocity_data = msg->twist.linear.x / ROVER_WHEEL_RADIUS;
 
         FL_data = velocity_data;
         FR_data = velocity_data;
@@ -311,21 +311,21 @@ public:
 
     }
 
-    void twist_to_turning_radius(const geometry_msgs::msg::Twist::SharedPtr msg)
+    void twist_to_turning_radius(const geometry_msgs::msg::TwistStamped::SharedPtr msg)
     {
-        l = msg->linear.x / msg->angular.z;
+        l = msg->twist.linear.x / msg->twist.angular.z;
     }
 
-    void rotate_in_place(const geometry_msgs::msg::Twist::SharedPtr& msg)
+    void rotate_in_place(const geometry_msgs::msg::TwistStamped::SharedPtr& msg)
     {
-        FL_data = -float(sqrt(d1*d1+d3*d3) * msg->angular.z / ROVER_WHEEL_RADIUS);
-        RL_data = -float(sqrt(d1*d1+d2*d2) * msg->angular.z / ROVER_WHEEL_RADIUS);
+        FL_data = -float(sqrt(d1*d1+d3*d3) * msg->twist.angular.z / ROVER_WHEEL_RADIUS);
+        RL_data = -float(sqrt(d1*d1+d2*d2) * msg->twist.angular.z / ROVER_WHEEL_RADIUS);
 
-        ML_data = -float(d4 * msg->angular.z / ROVER_WHEEL_RADIUS);
-        FR_data = float(sqrt(d1*d1+d3*d3) * msg->angular.z / ROVER_WHEEL_RADIUS);
+        ML_data = -float(d4 * msg->twist.angular.z / ROVER_WHEEL_RADIUS);
+        FR_data = float(sqrt(d1*d1+d3*d3) * msg->twist.angular.z / ROVER_WHEEL_RADIUS);
 
-        RR_data = float(d4 * msg->angular.z / ROVER_WHEEL_RADIUS);
-        MR_data = float(sqrt(d1*d1+d2*d2) * msg->angular.z / ROVER_WHEEL_RADIUS);
+        RR_data = float(d4 * msg->twist.angular.z / ROVER_WHEEL_RADIUS);
+        MR_data = float(sqrt(d1*d1+d2*d2) * msg->twist.angular.z / ROVER_WHEEL_RADIUS);
     }
 
     void publishVelocity() {
